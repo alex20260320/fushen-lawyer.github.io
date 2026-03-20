@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>付申律师 | 上海靖霖律师事务所合伙人</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a5f;
+            --primary-light: #2d4a6f;
+            --text: #333;
+            --text-light: #666;
+            --text-muted: #888;
+            --bg: #fff;
+            --bg-light: #f5f6f7;
+            --border: #e5e7eb;
+            --accent: #c9a227;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.8;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        /* Header */
+        header {
+            background: var(--primary);
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .header-top {
+            background: rgba(0,0,0,0.2);
+            padding: 6px 0;
+            font-size: 0.8rem;
+        }
+
+        .header-top-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-contact {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header-contact span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            opacity: 0.9;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 14px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: white;
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Noto Serif SC', serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .logo-text h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .logo-text p {
+            font-size: 0.7rem;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 100px;
+            background: var(--primary);
+            color: white;
+            padding: 80px 24px;
+        }
+
+        .hero-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-portrait {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-portrait img {
+            width: 240px;
+            height: 300px;
+            object-fit: cover;
+            border: 4px solid rgba(255,255,255,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .hero-text h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .hero-divider {
+            width: 40px;
+            height: 2px;
+            background: var(--accent);
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            opacity: 0.85;
+            line-height: 1.8;
+            max-width: 500px;
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 28px;
+        }
+
+        .hero-tag {
+            background: rgba(255,255,255,0.1);
+            padding: 6px 16px;
+            border-radius: 3px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 24px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .section-header h2 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.6rem;
+            color: var(--primary);
+            font-weight: 600;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border);
+            display: inline-block;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            margin-top: 12px;
+            font-size: 0.95rem;
+        }
+
+        /* About Section */
+        #about {
+            background: var(--bg-light);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 50px;
+        }
+
+        .about-card {
+            background: white;
+            padding: 28px;
+            border: 1px solid var(--border);
+        }
+
+        .about-card h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+        }
+
+        .info-item {
+            display: flex;
+            margin-bottom: 14px;
+            font-size: 0.9rem;
+        }
+
+        .info-label {
+            width: 70px;
+            color: var(--text-muted);
+            flex-shrink: 0;
+        }
+
+        .info-value {
+            color: var(--text);
+        }
+
+        .about-content h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .about-content p {
+            color: var(--text-light);
+            margin-bottom: 16px;
+            font-size: 0.95rem;
+        }
+
+        .credentials {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 30px;
+        }
+
+        .credential-item {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .credential-item h4 {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            font-weight: 400;
+        }
+
+        .credential-item p {
+            font-size: 0.95rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Honors Section */
+        #honors {
+            background: white;
+        }
+
+        .honors-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .honor-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 20px 24px;
+            background: var(--bg-light);
+            border-left: 3px solid var(--primary);
+        }
+
+        .honor-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .honor-content h4 {
+            font-size: 0.95rem;
+            color: var(--text);
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .honor-content p {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Highlights Section */
+        #highlights {
+            background: white;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .highlight-card {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+        }
+
+        .highlight-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .highlight-source {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .highlight-source .badge {
+            background: var(--primary);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 2px;
+            font-size: 0.75rem;
+        }
+
+        .highlight-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.05rem;
+            color: var(--primary);
+            line-height: 1.5;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .highlight-summary {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+
+        .highlight-footer {
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .highlight-tag {
+            background: white;
+            color: var(--text-light);
+            padding: 3px 10px;
+            border-radius: 2px;
+            font-size: 0.75rem;
+        }
+
+        .highlight-link {
+            color: var(--primary);
+            font-size: 0.85rem;
+        }
+
+        /* Cases Section */
+        #cases {
+            background: var(--bg-light);
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .case-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 24px;
+            position: relative;
+        }
+
+        .case-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .case-tag {
+            background: var(--bg-light);
+            color: var(--text-light);
+            padding: 3px 10px;
+            border-radius: 2px;
+            font-size: 0.75rem;
+        }
+
+        .case-tag.highlight {
+            background: var(--primary);
+            color: white;
+        }
+
+        .case-title {
+            font-size: 0.95rem;
+            color: var(--text);
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .case-result {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Articles Section */
+        #articles {
+            background: var(--bg-light);
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .article-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s;
+        }
+
+        .article-card:hover {
+            border-color: var(--primary);
+        }
+
+        .article-date {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .article-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.05rem;
+            color: var(--primary);
+            line-height: 1.5;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .article-summary {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+
+        .article-footer {
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .article-tag {
+            background: var(--bg-light);
+            color: var(--text-light);
+            padding: 3px 10px;
+            border-radius: 2px;
+            font-size: 0.75rem;
+        }
+
+        .article-link {
+            color: var(--primary);
+            font-size: 0.85rem;
+        }
+
+        .articles-more {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .articles-more a {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .articles-more a:hover {
+            background: var(--primary-light);
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
+
+        #contact .section-header h2 {
+            color: white;
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-item h3 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+
+        .contact-item p {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .contact-item .contact-note {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-top: 6px;
+        }
+
+        /* Footer */
+        footer {
+            background: #152a45;
+            color: rgba(255,255,255,0.6);
+            padding: 30px 24px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        .footer-logo {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.1rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero-portrait {
+                order: -1;
+            }
+
+            .hero-portrait img {
+                width: 180px;
+                height: 225px;
+            }
+
+            .hero-divider {
+                margin: 20px auto;
+            }
+
+            .hero-tags {
+                justify-content: center;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .credentials {
+                grid-template-columns: 1fr;
+            }
+
+            .honors-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .header-top-content {
+                flex-direction: column;
+                gap: 4px;
+                font-size: 0.75rem;
+            }
+
+            .hero {
+                margin-top: 90px;
+                padding: 50px 24px;
+            }
+
+            .hero-text h2 {
+                font-size: 1.8rem;
+            }
+
+            section {
+                padding: 40px 24px;
+            }
+
+            .section-header h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="header-top-content">
+                <span>上海靖霖律师事务所 · 专业刑事辩护</span>
+                <div class="header-contact">
+                    <span>电话：13167275179</span>
+                    <span>地址：上海市</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <div class="logo-text">
+                    <h1>付申律师</h1>
+                    <p>上海靖霖律师事务所</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">律师简介</a></li>
+                <li><a href="#honors">荣誉资质</a></li>
+                <li><a href="#highlights">舆论关注</a></li>
+                <li><a href="#cases">经典案例</a></li>
+                <li><a href="#articles">专业文章</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>付申律师</h2>
+                <p class="hero-subtitle">上海靖霖律师事务所合伙人 · 刑民交叉部主任</p>
+                <div class="hero-divider"></div>
+                <p>专业刑事辩护律师，专注重大刑事案件、企业家案件。用专业和勤勉为当事人提供高品质的刑事法律服务。</p>
+                <div class="hero-tags">
+                    <span class="hero-tag">刑事辩护</span>
+                    <span class="hero-tag">刑事控告</span>
+                    <span class="hero-tag">刑事非诉</span>
+                    <span class="hero-tag">重大案件</span>
+                    <span class="hero-tag">企业家案件</span>
+                </div>
+            </div>
+            <div class="hero-portrait">
+                <img src="portrait.jpg" alt="付申律师">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>律师简介</h2>
+                <p class="section-subtitle">专业背景与执业领域</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>基本信息</h3>
+                    <div class="info-item">
+                        <span class="info-label">姓名</span>
+                        <span class="info-value">付申律师</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">职务</span>
+                        <span class="info-value">合伙人 / 刑民交叉部主任</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">执业机构</span>
+                        <span class="info-value">上海靖霖律师事务所</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">职称</span>
+                        <span class="info-value">三级律师</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">联系电话</span>
+                        <span class="info-value">13167275179</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">微信</span>
+                        <span class="info-value">同手机号</span>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <p>付申律师，中国政法大学刑法学硕士，华东政法大学法律博士。自执业以来，<strong>专业只从事刑事业务</strong>，在刑事辩护、刑事控告、刑事非诉领域积累了丰富的实践经验。</p>
+                    <p>擅长办理<strong>重大刑事案件</strong>、<strong>企业家案件</strong>，曾成功办理多起中纪委指定案件、公安部督办案件、省级典型案例。以深厚的法学理论功底、严谨的专业态度和出色的辩护技巧，为当事人争取最优结果。</p>
+                    
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <h4>硕士</h4>
+                            <p>中国政法大学<br>刑法学</p>
+                        </div>
+                        <div class="credential-item">
+                            <h4>博士</h4>
+                            <p>华东政法大学<br>法律博士</p>
+                        </div>
+                        <div class="credential-item">
+                            <h4>专注领域</h4>
+                            <p>刑事业务<br>刑民交叉</p>
+                        </div>
+                    </div>
+
+                    <div class="firm-intro" style="margin-top: 40px; padding-top: 30px; border-top: 1px solid var(--border);">
+                        <h4 style="font-family: 'Noto Serif SC', serif; font-size: 1.1rem; color: var(--primary); margin-bottom: 16px; font-weight: 600;">执业机构</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-light); line-height: 1.8; margin-bottom: 12px;"><strong>上海靖霖律师事务所</strong>，只从事刑事业务（刑事辩护、刑事代理、刑事非诉）。</p>
+                        <p style="font-size: 0.95rem; color: var(--text-light); line-height: 1.8; margin-bottom: 12px;">在上海、杭州、北京、贵阳、济南、武汉、天津、福州、苏州、沈阳、太原、鄂尔多斯、广州、三亚、南京设有办公室。共有专业刑事律师近300人。</p>
+                        <p style="font-size: 0.95rem; color: var(--text-light); line-height: 1.8;">已出版专业书籍十余本，有大量刑案及项目积累，办案经验丰富，技术精湛，奉行"专业、优质、兢业"服务理念，攻刑以专，相靖予霖。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honors Section -->
+    <section id="honors">
+        <div class="container">
+            <div class="section-header">
+                <h2>荣誉资质</h2>
+                <p class="section-subtitle">专业认可 · 行业肯定</p>
+            </div>
+
+            <div class="honors-grid">
+                <div class="honor-item">
+                    <div class="honor-icon">⭐</div>
+                    <div class="honor-content">
+                        <h4>市级优秀青年律师</h4>
+                    </div>
+                </div>
+
+                <div class="honor-item">
+                    <div class="honor-icon">⚖️</div>
+                    <div class="honor-content">
+                        <h4>市级优秀专业律师（刑辩类）</h4>
+                    </div>
+                </div>
+
+                <div class="honor-item">
+                    <div class="honor-icon">📋</div>
+                    <div class="honor-content">
+                        <h4>市级优秀专业案例（刑辩类）（两次获取）</h4>
+                    </div>
+                </div>
+
+                <div class="honor-item" style="grid-column: 1 / -1;">
+                    <div class="honor-icon">🏆</div>
+                    <div class="honor-content">
+                        <h4>省级典型刑事案例（两件不起诉案件入选）</h4>
+                        <p>两件不起诉案件同时入选江苏省典型刑事案例</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section id="highlights">
+        <div class="container">
+            <div class="section-header">
+                <h2>重大舆论关注案件</h2>
+                <p class="section-subtitle">央视报道 · 社会关注 · 媒体聚焦</p>
+            </div>
+
+            <div class="highlights-grid">
+                <a href="#" class="highlight-card">
+                    <div class="highlight-source">
+                        <span class="badge">CCTV13</span>
+                        <span>《法治故事》栏目报道</span>
+                    </div>
+                    <h4 class="highlight-title">意外的"赌局"——谎称谈生意设赌局诈骗案</h4>
+                    <p class="highlight-summary">中央电视台《法治故事》栏目专题报道案件。嫌疑人以谈生意为诱饵接触被害人，诱骗参与赌博后"出老千"骗取钱财。成功辩护实现案件降格处理。</p>
+                    <div class="highlight-footer">
+                        <span class="highlight-tag">央视报道</span>
+                        <span class="highlight-link">查看详情 →</span>
+                    </div>
+                </a>
+
+                <a href="#" class="highlight-card">
+                    <div class="highlight-source">
+                        <span class="badge">公安部督办</span>
+                        <span>净网专项行动典型案例</span>
+                    </div>
+                    <h4 class="highlight-title">宿迁特大网络侵犯著作权案</h4>
+                    <p class="highlight-summary">涉案金额超千万元的特大网络侵犯著作权案件，公安部督办案件。成功办理取得良好辩护效果。</p>
+                    <div class="highlight-footer">
+                        <span class="highlight-tag">知识产权犯罪</span>
+                        <span class="highlight-link">查看详情 →</span>
+                    </div>
+                </a>
+
+                <a href="#" class="highlight-card">
+                    <div class="highlight-source">
+                        <span class="badge">净网行动</span>
+                        <span>公安部督办案件</span>
+                    </div>
+                    <h4 class="highlight-title">无锡张某某传播淫秽物品牟利案</h4>
+                    <p class="highlight-summary">搭建"心愿屋商城"网站，组织翻译境外色情动漫游戏并汉化供会员下载，注册会员6507名，发布170部色情动漫游戏，下载量7万余次。成功辩护实现降格处罚。</p>
+                    <div class="highlight-footer">
+                        <span class="highlight-tag">公安部督办</span>
+                        <span class="highlight-link">查看详情 →</span>
+                    </div>
+                </a>
+
+                <a href="https://mp.weixin.qq.com/s/jGtojkgM-16d0lxKiCs28A" target="_blank" class="highlight-card">
+                    <div class="highlight-source">
+                        <span class="badge">中纪委</span>
+                        <span>清廉江苏报道</span>
+                    </div>
+                    <h4 class="highlight-title">中国机械设备工程股份有限公司原董事长张淳案</h4>
+                    <p class="highlight-summary">中纪委指定管辖案件。原中国机械设备工程股份有限公司党委书记、董事长张淳接受纪律审查和监察调查。重大职务犯罪案件。</p>
+                    <div class="highlight-footer">
+                        <span class="highlight-tag">中纪委指定</span>
+                        <span class="highlight-link">阅读报道 →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases">
+        <div class="container">
+            <div class="section-header">
+                <h2>优秀案例</h2>
+                <p class="section-subtitle">经典案例展示 · 专业实力见证</p>
+            </div>
+
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">重大案件</span>
+                        <span class="case-tag">贪污受贿</span>
+                    </div>
+                    <h4 class="case-title">原无锡太湖新城发展集团有限公司董事局主席重大贪污、受贿案</h4>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">中纪委指定</span>
+                        <span class="case-tag">受贿案</span>
+                    </div>
+                    <h4 class="case-title">原中国机械设备工程股份有限公司董事长受贿案</h4>
+                    <div class="case-result">中纪委指定案件</div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">市级优秀案例</span>
+                        <span class="case-tag">职务侵占</span>
+                    </div>
+                    <h4 class="case-title">原国药集团无锡医疗器械有限公司高管职务侵占案</h4>
+                    <div class="case-result">中纪委交办案件、市级优秀案例</div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">中央通报</span>
+                        <span class="case-tag">非法采矿</span>
+                    </div>
+                    <h4 class="case-title">福建泉州H某某非法采矿案</h4>
+                    <div class="case-result">中央生态环境保护督察组通报典型案件</div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">省级典型案例</span>
+                        <span class="case-tag">不起诉</span>
+                    </div>
+                    <h4 class="case-title">原无锡市某委处长受贿、玩忽职守案</h4>
+                    <div class="case-result">检察院决定不起诉（省级典型案例）</div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">省级典型案例</span>
+                        <span class="case-tag">不起诉</span>
+                    </div>
+                    <h4 class="case-title">L某某掩饰隐瞒犯罪所得案</h4>
+                    <div class="case-result">检察院决定不起诉（省级典型案例）</div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">公安部督办</span>
+                        <span class="case-tag">降格处罚</span>
+                    </div>
+                    <h4 class="case-title">Z某某传播淫秽物品牟利案</h4>
+                    <div class="case-result">公安部督办案件、降格处罚</div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">市级优秀案例</span>
+                        <span class="case-tag">撤案</span>
+                    </div>
+                    <h4 class="case-title">Y某某污染环境案</h4>
+                    <div class="case-result">公安机关撤销案件（市级优秀案例）</div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">撤案</span>
+                        <span class="case-tag">重大诈骗</span>
+                    </div>
+                    <h4 class="case-title">F某某重大诈骗案</h4>
+                    <div class="case-result">公安机关撤销案件（案值7500万元）</div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-tags">
+                        <span class="case-tag highlight">变更罪名</span>
+                        <span class="case-tag">重大诈骗</span>
+                    </div>
+                    <h4 class="case-title">X某某重大诈骗案</h4>
+                    <div class="case-result">法院变更罪名为计算机犯罪（案值1400万元）</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles">
+        <div class="container">
+            <div class="section-header">
+                <h2>专业文章</h2>
+                <p class="section-subtitle">深度研究 · 实务分享 · 刑事辩护前沿</p>
+            </div>
+
+            <div class="articles-grid">
+                <a href="https://mp.weixin.qq.com/s/GABZ-L6lCNKcCCnHCGfw1g" target="_blank" class="article-card">
+                    <div class="article-date">2025年2月6日</div>
+                    <h4 class="article-title">司法会计鉴定意见审查的31个要点</h4>
+                    <p class="article-summary">系统梳理司法会计鉴定意见的审查方法与实务要点，为刑事辩护中涉及财务、会计问题的案件提供审查思路。</p>
+                    <div class="article-footer">
+                        <span class="article-tag">司法会计</span>
+                        <span class="article-link">阅读全文 →</span>
+                    </div>
+                </a>
+
+                <a href="https://mp.weixin.qq.com/s/FF3QYe907XOt_l0p-eSioA" target="_blank" class="article-card">
+                    <div class="article-date">2025年1月</div>
+                    <h4 class="article-title">一文读懂刑法中的四个计算机犯罪罪名</h4>
+                    <p class="article-summary">深入解析非法侵入计算机信息系统罪、非法获取计算机信息系统数据罪等四个罪名的构成要件与辩护要点。</p>
+                    <div class="article-footer">
+                        <span class="article-tag">计算机犯罪</span>
+                        <span class="article-link">阅读全文 →</span>
+                    </div>
+                </a>
+
+                <a href="https://mp.weixin.qq.com/s/G1BWiKiZWhV_1VQ6cQz-VQ" target="_blank" class="article-card">
+                    <div class="article-date">2024年12月</div>
+                    <h4 class="article-title">22件法院不采纳量刑建议被检察院抗诉的案件</h4>
+                    <p class="article-summary">梳理分析22件法院不采纳量刑建议后被检察院抗诉的典型案例，揭示量刑协商与审判实践中的争议焦点。</p>
+                    <div class="article-footer">
+                        <span class="article-tag">量刑建议</span>
+                        <span class="article-link">阅读全文 →</span>
+                    </div>
+                </a>
+
+                <a href="https://mp.weixin.qq.com/s/jwTDaVmKqLylidHXYfggfg" target="_blank" class="article-card">
+                    <div class="article-date">2024年</div>
+                    <h4 class="article-title">非法采矿案件中价值认定报告的质证要点</h4>
+                    <p class="article-summary">深入分析非法采矿案件价值认定的关键问题，提供针对价值认定报告的专业质证思路与辩护要点。</p>
+                    <div class="article-footer">
+                        <span class="article-tag">非法采矿</span>
+                        <span class="article-link">阅读全文 →</span>
+                    </div>
+                </a>
+
+                <a href="https://mp.weixin.qq.com/s/tA71zOFnH3eELq71qQUSSA" target="_blank" class="article-card">
+                    <div class="article-date">2024年</div>
+                    <h4 class="article-title">新矿法对工程施工附随开采型非法采矿案件的影响</h4>
+                    <p class="article-summary">解读新修订的矿产资源法对工程施工附随开采行为的法律定性影响，分析相关刑事风险与辩护策略。</p>
+                    <div class="article-footer">
+                        <span class="article-tag">非法采矿</span>
+                        <span class="article-link">阅读全文 →</span>
+                    </div>
+                </a>
+
+                <a href="https://mp.weixin.qq.com/s/4LUvqLAfd2k35GLFPwU2RA" target="_blank" class="article-card">
+                    <div class="article-date">2024年</div>
+                    <h4 class="article-title">「AI荐股」能不能带我飞？</h4>
+                    <p class="article-summary">剖析AI荐股模式的法律风险与刑事责任边界，揭示非法荐股、操纵市场等违法犯罪行为的认定标准。</p>
+                    <div class="article-footer">
+                        <span class="article-tag">证券犯罪</span>
+                        <span class="article-link">阅读全文 →</span>
+                    </div>
+                </a>
+
+                <a href="https://mp.weixin.qq.com/s/CbR7y7JJ4OvsmuP5V1xsHQ" target="_blank" class="article-card">
+                    <div class="article-date">2024年</div>
+                    <h4 class="article-title">非法经营场外配资业务的辩护要点</h4>
+                    <p class="article-summary">系统梳理场外配资业务的法律性质、入罪标准与辩护要点，为相关刑事案件提供专业辩护思路。</p>
+                    <div class="article-footer">
+                        <span class="article-tag">非法经营</span>
+                        <span class="article-link">阅读全文 →</span>
+                    </div>
+                </a>
+
+                <a href="https://mp.weixin.qq.com/s/vTD7AvnM9vgnwq6Q8LCEmA" target="_blank" class="article-card">
+                    <div class="article-date">2024年</div>
+                    <h4 class="article-title">违规开设场外虚盘（B盘）配资平台行为的辩护要点</h4>
+                    <p class="article-summary">针对场外虚盘配资平台的刑事责任问题，分析罪名适用争议与有效辩护策略。</p>
+                    <div class="article-footer">
+                        <span class="article-tag">证券犯罪</span>
+                        <span class="article-link">阅读全文 →</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="articles-more">
+                <a href="https://mp.weixin.qq.com/s/GABZ-L6lCNKcCCnHCGfw1g" target="_blank">关注公众号「付申律师」阅读更多文章</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>联系方式</h2>
+                <p class="section-subtitle">专业刑事辩护，随时为您提供法律咨询</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-item">
+                    <h3>电话咨询</h3>
+                    <p>13167275179</p>
+                    <p class="contact-note">工作日 9:00-18:00</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>微信咨询</h3>
+                    <p>13167275179</p>
+                    <p class="contact-note">微信同号，添加请备注</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>办公地址</h3>
+                    <p>上海市</p>
+                    <p class="contact-note">上海靖霖律师事务所</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">付申律师</div>
+        <p>上海靖霖律师事务所 · 合伙人 · 刑民交叉部主任 | 专业刑事辩护 | 刑事控告 | 刑事非诉</p>
+        <p style="margin-top: 8px; opacity: 0.7;">© 2025 付申律师</p>
+    </footer>
+</body>
+</html>
